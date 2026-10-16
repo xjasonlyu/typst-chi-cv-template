@@ -50,10 +50,16 @@
 ) = {
   let uri = to-string(uri);
   let icon = to-string(icon);
+  // Font Awesome 7 reports a full-em cap height. Keep icons from increasing
+  // the surrounding line box compared with Font Awesome 6 (421/512 em).
+  let icon-cap-height = 421 / 512 * 1em;
   if text != "" {
-    [#box(fa-icon(icon, solid: solid), inset: (right: 2pt))#link(uri)[#text]]
+    [#box(
+      fa-icon(icon, solid: solid, top-edge: icon-cap-height),
+      inset: (right: 2pt),
+    )#link(uri)[#text]]
   } else {
-    link(uri)[#fa-icon(icon, solid: solid)]
+    link(uri)[#fa-icon(icon, solid: solid, top-edge: icon-cap-height)]
   }
 }
 
