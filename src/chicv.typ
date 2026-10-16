@@ -172,8 +172,6 @@
   par-padding: cventry-padding,
   body
 ) = {
-  fa-version("6")
-
   set par(justify: true, leading: 0.7em)
 
   show heading.where(

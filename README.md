@@ -76,8 +76,8 @@ This template depends on fonts that are **not bundled** with the package (Typst 
 **Montserrat** (SIL Open Font License) — used for headings and body text.
 Download from [Google Fonts](https://fonts.google.com/specimen/Montserrat).
 
-**Font Awesome 6 Free** (SIL Open Font License) — used for icons.
-The package requires `Font Awesome 6 Free-Solid-900.otf`, `Font Awesome 6 Free-Regular-400.otf`, and `Font Awesome 6 Brands-Regular-400.otf`. Download from [Font Awesome](https://fontawesome.com/download).
+**Font Awesome 7 Free** (SIL Open Font License) — used for icons.
+The package requires `Font Awesome 7 Free-Solid-900.otf`, `Font Awesome 7 Free-Regular-400.otf`, and `Font Awesome 7 Brands-Regular-400.otf`. Download from [Font Awesome](https://fontawesome.com/download).
 
 Place the `.otf` files in a directory and pass it to `typst compile` with `--font-path`:
 
